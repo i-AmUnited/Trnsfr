@@ -3,9 +3,10 @@ import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/home';
 import AddFiles from './components/add_files';
-import Morefile from './components/morefiles';
+import ViewContent from './components/view_content';
 import FileDownload from './pages/fileDownload';
-
+import FileReady from './components/file_ready';
+import SendAsMail from './components/sendmail_form';
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />}>
         <Route index element={<AddFiles />} />
-        <Route path="tasks" element={<Morefile />} />
+        <Route path="file_ready" element={<FileReady />} />
+        <Route path="view_content" element={<ViewContent />} />
+        <Route path="send_file" element={<SendAsMail />} />
       </Route>
       <Route path='/fileDownload' element={<FileDownload />} />
     </Routes>

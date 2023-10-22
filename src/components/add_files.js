@@ -74,7 +74,6 @@ const AddFiles = () => {
           <div className="px-5">
             {selectedFiles.length > 0 ? 
             <button onClick={handleFileSelect} className="border w-full py-4 mb-8 text-xs rounded border-[#71CB90] text-[#71CB90] flex justify-center items-center gap-4 hover:bg-[#71CB9024]">
-              {/* <img src={add} alt="" /> */}
               <span>add more files</span>
             </button>
              : 
