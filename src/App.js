@@ -7,6 +7,7 @@ import ViewContent from './components/view_content';
 import FileDownload from './pages/fileDownload';
 import FileReady from './components/file_ready';
 import SendAsMail from './components/sendmail_form';
+import Loading from './components/loading';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="file_ready" element={<FileReady />} />
         <Route path="view_content" element={<ViewContent />} />
         <Route path="send_file" element={<SendAsMail />} />
+        <Route path="loading" element={<Loading/>} />
       </Route>
       <Route path='/fileDownload' element={<FileDownload />} />
     </Routes>
