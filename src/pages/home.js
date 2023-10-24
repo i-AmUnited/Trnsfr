@@ -91,11 +91,10 @@ const Home = () => {
           bgClass={"backdrop-blur-md bg-white/20"}
           logo={logowhite} 
         />
-        <div className="grid grid-cols-1 md:grid-cols-3 m-5 px-0 md:px-5 h-[76%] items-center">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-3 m-5 px-0 md:px-5 h-[76%] content-between">
           <Outlet />
-          </div>
-          <div className="p-8 col-span-2">
+          
+          <div className="p-8 col-span-2 hidden lg:block">
             {randomComponent}
           </div>
         </div>
