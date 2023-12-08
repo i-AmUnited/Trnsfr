@@ -8,6 +8,8 @@ import FileDownload from './pages/fileDownload';
 import FileReady from './components/file_ready';
 import SendAsMail from './components/sendmail_form';
 import Loading from './components/loading';
+import TermsOfService from './pages/termsOfService';
+import PrivacyPolicy from './pages/privacyPolicy';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="loading" element={<Loading/>} />
       </Route>
       <Route path='/fileDownload' element={<FileDownload />} />
+      <Route path='/terms' element={<TermsOfService />} />
+      <Route path='/privacy' element={<PrivacyPolicy />} />
     </Routes>
     </BrowserRouter>
   );

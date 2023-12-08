@@ -1,4 +1,5 @@
 import support from "../Media/customer_service.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return ( 
@@ -50,8 +51,8 @@ const Footer = () => {
         <div className="text-xs flex justify-between fixed bottom-0 left-0 px-5 md:px-10 py-8 md:py-6 bg-black right-0 w-full">
           <div>2023 Trnsfr</div>
           <div className="gap-8 flex">
-            <span>Terms</span>
-            <span>Privacy</span>
+            <Link to={"/terms"}>Terms of Service</Link>
+            <Link to={"/privacy"}>Privacy policy</Link>
           </div>
         </div>
        </div>
